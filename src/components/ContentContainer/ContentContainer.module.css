@@ -1,0 +1,60 @@
+.contentContainer {
+    display: grid;
+    min-height: 100%;
+}
+
+.table {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 600px;
+}
+
+.table > thead,
+.table > tbody {
+    justify-self: center;
+    max-width: 700px;
+}
+
+.table > thead > tr > td,
+.table > tbody > tr > td {
+    padding: 5px 0;
+    border: 1px solid var(--green);
+    min-width: 150px;
+}
+
+.table > thead > tr > td {
+    font-weight: 600;
+}
+
+.table > tbody > tr > td {
+    font-size: 0.8em;
+}
+
+.slotsContainer {
+    display: grid;
+    visibility: hidden;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.startBtn {
+    justify-self: center;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    padding: 10px 40px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.startBtn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px var(--green);
+    padding: 10px 42px; 
+}

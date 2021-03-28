@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+}
+.container,
+.data {
+    padding: 20px;
+}
+
+.data {
+    font-size: 2em;
+}
+
+.startBtn {
+    justify-self: center;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    padding: 10px 40px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.startBtn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px var(--green);
+    padding: 10px 42px; 
+}

@@ -1,0 +1,56 @@
+.mainContainer {
+    display: grid;
+    grid-auto-flow: row;
+    grid-area: "logoContainer .balanceAndAvatarContainer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+}
+
+.logoContainer {
+    grid-area: logoContainer;
+    grid-column: 1 / 2;
+    margin-left: 50px;
+}
+
+#logo {
+    max-width: 150px;
+}
+
+.balanceAndAvatarContainer{
+    display: grid;
+    grid-area: balanceContainer;
+    justify-self: end;
+    align-self: center;
+    margin-right: 50px;
+    grid-column: 2 / 3;
+    grid-auto-flow: column;
+}
+
+.balanceContainer,
+.avatarContainer,
+.loginBtn {
+    margin: 10px;
+    align-self: center;
+    
+}
+
+.balanceContainer {
+    font-weight: 600;
+}
+
+.loginBtn {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    padding: 10px 40px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.loginBtn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px var(--green);
+    padding: 10px 42px; 
+}
